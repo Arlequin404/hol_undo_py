@@ -4,8 +4,11 @@ FROM node:16
 # Crea un directorio de trabajo
 WORKDIR /app
 
-# Copia el archivo de la aplicación
-COPY app.js .
+# Copia los archivos de la aplicación
+COPY . .
+
+# Instala las dependencias
+RUN npm install express
 
 # Ejecuta el script
 CMD ["node", "app.js"]
