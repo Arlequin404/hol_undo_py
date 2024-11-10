@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 // Define una ruta de inicio
 app.get('/', (req, res) => {
-  res.send("Hola Mundo desde Node.js!");
+  res.send("Hola Mundo");
 });
 
 // Inicia el servidor
